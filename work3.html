@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,200&display=swap" rel="stylesheet">
+
+
+    <title>Emoji, Favicon, IFrame, Map, list</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+    <!-- SEO -->
+    <meta name="description" content="This is a sample HTML file to demonstrate emoji, favicon, iframe, map, and list.">
+    <meta name="keywords" content="HTML, Emoji, Favicon, IFrame, Map, List, Examples">
+
+     <style>
+        .roboto-font, h1, h3{
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: italic;
+            font-variation-settings:
+            "wdth" 100;
+            }
+
+        div{
+            width: 100% ; 
+            margin: auto; 
+            padding-top: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- Favicon -> Usually 20x20 and used for icons. name.ico formatted
+        IFrame -> embedded web pages from outsource to our main pages 
+        ol, ul, li, dl, dt, dd -->
+
+    <h1 class="roboto-font">Emoji, Favicon, IFrame, Map, list</h1>
+    <p>&#128512</p>
+
+    <br>
+    <hr>
+
+    <h3 class="roboto-font">IFrame Example</h3>
+    <div>
+        <iframe src="https://fr.wikipedia.org/wiki/Main_Page" width="600" height="400" title="Example IFrame"></iframe>
+        <!-- Some cases, source may not response to our connection requests as below -->
+        <iframe src="https://www.techcareer.net/" width="600" height="400" title="Example IFrame"></iframe>
+    </div>
+
+    <br>
+    <hr>
+
+    <h3 class="roboto-font">MAP Example</h3>
+    <div style="width: 80% ; margin: auto; padding-top: 20px;">
+        <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=izmir+(Test)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            <a href="https://www.mapsdirections.info/de/evolkerung-auf-einer-karte-berechnen/">interaktive Bevölkerungskarte</a>
+        </iframe>
+    </div>
+
+
+    <br>
+    <hr>
+
+    <h3 class="roboto-font">Some Cities from Turkiye</h3>
+    <ul style="list-style-type: square;">
+    <li>Izmir</li>
+    <li>Ankara</li>
+    <li>Bursa</li>
+    <li>Istanbul</li>
+    <li>Antalya</li>
+    </ul>
+
+    <br>
+    <hr>
+
+    <h3 class="roboto-font">Definition List Example</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>JS</dt>
+        <dd>JavaScript</dd>
+    </dl>
+
+    <br>
+    <hr>
+
+    <!-- Datalist example -> both select from list or just enter some keywords for search from list-->
+    <h3 class="roboto-font">Datalist Example</h3>
+    <form action="">
+        <label for="browser">Choose your favorite browser from the list:</label>
+        <input list="browsers" name="browser" id="browser">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Safari">
+            <option value="Opera">
+            <option value="Edge">
+        </datalist>
+    </form>
+
+    <br>
+    <hr>
+    
+</body>
+</html>
