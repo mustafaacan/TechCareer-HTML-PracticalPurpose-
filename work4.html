@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,200&display=swap" rel="stylesheet">
+
+
+    <title>FORMS & TABLE</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+    <!-- SEO -->
+    <meta name="description" content="This is a practice page for forms and tables.">
+    <meta name="keywords" content="HTML, CSS, Forms, Tables, Practice">
+
+     <style>
+
+        .roboto-font, h1, h3{
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: italic;
+            font-variation-settings:
+            "wdth" 100;
+            }
+
+        fieldset{
+            border: 2px solid #000;
+            padding: 10px;
+            margin-bottom: 15px;
+            width: 50%;
+        }    
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px 20px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50; 
+            color: white; 
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2; 
+        }
+
+        tr:hover {
+            background-color: #ddd; 
+     }
+
+     @media screen and (max-width: 600px) {
+        table, thead, tbody, th, td, tr {
+            display: block;
+        }
+
+         form{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        } 
+
+        fieldset{
+            width: 90%;
+        }
+       
+        button{
+            margin-bottom: 10px;
+            width: 30%;
+        }
+
+    }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- FORMS -> to send some information entries between page regarding to user interactions 
+     if label will be used, then "for" tag and used input's "id" tag should be matched
+     default method is GET. For security purposes, please use POST-->
+
+     <form action="" method="">
+        <fieldset>
+            <legend>Personel Information</legend>
+            <label for="name">Please Enter a Name</label>
+            <input type="text" id="name" name="name" pattern="[A-Za-zçÇğĞıİöÖşŞüÜ\s]+" placeholder="Your Name Here" required autofocus>
+            <br><br>
+            <label for="email">Please Enter your Email</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            <br><br>
+            <label for="age">Please Enter your Age</label>
+            <input type="number" id="age" name="age" min="1" max="120" required>    
+        </fieldset>
+        
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+     </form>
+
+     <hr>
+     <br>
+
+    <table border="1" width="70%" align="center">
+
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 3, Cell 1</td>
+                <td>Row 3, Cell 2</td>
+                <td>Row 3, Cell 3</td>
+            </tr>
+        
+
+    </table>
+    
+</body>
+</html>
